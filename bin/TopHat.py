@@ -29,7 +29,7 @@ logger = Logger()
 
 if True:
     for name in [
-   		'sqlalchemy.pool.impl.NullPool',
+		'sqlalchemy.pool.impl.QueuePool',
    		'boto3.resources.action',
    		'boto3.resources.factory',
    		'botocore.auth',
@@ -40,11 +40,12 @@ if True:
    		'botocore.loaders',
    		'botocore.parsers',
    		'botocore.retryhandler',
-   		'urllib3.connectionpool',
-        'sqlalchemy.pool.NullPool',
-        'sqlalchemy.engine.base.Engine',
-        'sqlalchemy.pool.SingletonThreadPool',
+   		'sqlalchemy.pool.impl.NullPool',
    		'sqlalchemy.pool.impl.SingletonThreadPool',
+   		'urllib3.connectionpool',
+        'sqlalchemy.engine.base.Engine',
+        'sqlalchemy.pool.NullPool',
+        'sqlalchemy.pool.SingletonThreadPool',
     ]:
         logging.getLogger(name).setLevel(logging.ERROR)
 
