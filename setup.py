@@ -10,7 +10,7 @@ with codecs.open(path.join(pwd, 'README.md'), 'r', encoding='utf8') as input:
 
 name='ClassyData'
 user='eddo888'
-version='1.2'
+version='1.3'
 
 setup(
 	name=name,
@@ -29,6 +29,7 @@ setup(
 	install_requires=[
 		'mysql-connector',
 		'sqlalchemy',
+                'jsonweb',
 		'Baubles',
 		'Perdy',
 		'Argumental',
