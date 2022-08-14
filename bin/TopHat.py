@@ -4,7 +4,8 @@
 
 import os, re, sys, argparse, json, datetime, xmltodict, uuid, logging
 
-sys.path.append('..')
+if os.path.dirname(sys.argv[0]) == '.':
+	sys.path.append('..')
 
 from Classes import *
 from Handlers import Jester, args
