@@ -37,6 +37,8 @@ if True:
    		'botocore.credentials',
    		'botocore.endpoint',
    		'botocore.hooks',
+   		'botocore.utils',
+   		'botocore.httpsession',
    		'botocore.loaders',
    		'botocore.parsers',
    		'botocore.retryhandler',
@@ -44,6 +46,7 @@ if True:
    		'sqlalchemy.pool.impl.SingletonThreadPool',
    		'urllib3.connectionpool',
         'sqlalchemy.engine.base.Engine',
+        'sqlalchemy.engine.Engine',
         'sqlalchemy.pool.NullPool',
         'sqlalchemy.pool.SingletonThreadPool',
     ]:
